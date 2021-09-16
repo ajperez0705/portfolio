@@ -1,0 +1,89 @@
+.hero {
+  height: 90vh;
+  background-color: $lightBlack;
+  padding: 0 24px;
+
+  @include breakpoint-up(medium) {
+    padding: 0 60px;
+  }
+
+  @include breakpoint-up(large) {
+    height: 90vh;
+    padding: 0 120px;
+  }
+
+  &__content {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto 0;
+    width: auto;
+
+    @include breakpoint-up(medium) {
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &-text {
+      margin: 20px 0;
+      text-align: center;
+
+      @include breakpoint-up(medium) {
+        text-align: left;
+        width: 60%;
+      }
+
+      h1 {
+        padding: 20px 0;
+
+        @include breakpoint-up(medium) {
+          font-size: 60px;
+        }
+
+        @include breakpoint-up(large) {
+          font-size: 100px;
+        }
+
+        span {
+          color: $darkPurple;
+        }
+      }
+
+      h6 {
+        // text-align: center;
+        // width: 50%;
+      }
+    }
+
+    &-cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+
+      @include breakpoint-up(medium) {
+        margin: 24px 0;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      & button:not(:last-child) {
+        margin-bottom: 16px;
+
+        @include breakpoint-up(medium) {
+          margin-right: 16px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

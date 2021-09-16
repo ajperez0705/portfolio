@@ -1,0 +1,121 @@
+//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  color: white;
+  // border: 1px solid red;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h5,
+h6 {
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p {
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+a {
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  color: $lightPurple;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  transition: text-decoration 0.3s ease-out;
+}
+
+.wrapper {
+  padding: 8px 24px;
+
+  @include breakpoint-up(medium) {
+    padding: 0 60px;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 0 120px;
+  }
+}
+
+.logo-span {
+  color: $darkPurple;
+}
+
+.mockup {
+  // width: 50%;
+}
+
+.primary-btn {
+  padding: 20px 28px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: $darkPurple;
+  // margin: 16px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #6d3cc4;
+  }
+}
+.secondary-btn {
+  padding: 20px 28px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: $lightPurple;
+  // margin: 16px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

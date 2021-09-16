@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/app/sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Andrew Perez - Portfolio</title>
+  </head>
+  <body>
+    <header class="wrapper header">
+      <div class="header__nav-bar">
+        <h1 class="header__nav-bar--logo">andrewPerez</h1>
+        <div class="header__desktop">
+          <div class="header__desktop-content">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Work</a>
+            <button class="primary-btn">Contact</button>
+          </div>
+        </div>
+        <!-- mobile btn -->
+        <button href="#" class="mobile-btn">
+          <div class="bar"></div>
+        </button>
+      </div>
+
+      <!-- mobile-menu -->
+      <div class="header__mobile-menu">
+        <div class="header__mobile-menu--content">
+          <ul class="header__mobile-menu--nav-links">
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Work</a></li>
+            <button class="primary-btn">Contact</button>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="overlay"></div> -->
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__content-text">
+          <h6>Hi, my name is</h6>
+          <h1>Andrew Perez<span class="title-span">.</span></h1>
+          <h6>
+            It Is A Long Established Fact That A Reader Will Be Distracted By
+            The Readable Content Of A Page When Looking At Its Layout. The Point
+            Of Using Lorem Ipsum
+          </h6>
+        </div>
+        <div class="hero__content-cta">
+          <button class="primary-btn">View Projects</button>
+          <button class="secondary-btn">View Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__content">
+        <!-- Placeholder -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="300"
+          height="150"
+          viewBox="0 0 300 150"
+        >
+          <rect fill="#ddd" width="300" height="150" />
+          <text
+            fill="rgba(0,0,0,0.5)"
+            font-family="sans-serif"
+            font-size="30"
+            dy="10.5"
+            font-weight="bold"
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+          >
+            300×150
+          </text>
+        </svg>
+
+        <!-- Mobile Accordion -->
+        <div class="accordion">
+          <div class="accordion__item">
+            <div class="accordion__item-header">My Story</div>
+            <div class="accordion__item-body">
+              <p class="accordion__item-body--content">
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">Projects & Technologies</div>
+            <div class="accordion__item-body">
+              <p class="accordion__item-body--content">
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div class="accordion__item-header">Design Skills</div>
+            <div class="accordion__item-body">
+              <p class="accordion__item-body--content">
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content-cards">
+          <div class="about-card">
+            <div class="about-card-content">
+              <h3>My Story</h3>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-content">
+              <h3>Projects & Technologies</h3>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-content">
+              <h3>Design Skills</h3>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="projects__cards">
+        <div class="projects__cards-card">
+          <div class="projects__cards-card-text">
+            <div class="projects__cards-card-text--ctas">
+              <a href="#">Live Project</a>
+              <a href="#">Github</a>
+            </div>
+            <div class="projects__cards-card-text--content">
+              <h4>Project 1</h4>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+            <div class="projects__cards-card-text--images">
+              <h5>Technologies Used:</h5>
+              <span>Tech Image Here</span>
+            </div>
+          </div>
+          <div class="projects__cards-card--main-image">
+            <img class="mockup" src="/images/martins-bbq.png" alt="" />
+          </div>
+        </div>
+
+        <div class="projects__cards-card">
+          <div class="projects__cards-card-text">
+            <div class="projects__cards-card-text--ctas">
+              <a href="#">Live Project</a>
+              <a href="#">Github</a>
+            </div>
+            <div class="projects__cards-card-text--content">
+              <h4>Project 1</h4>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+            <div class="projects__cards-card-text--images">
+              <h5>Technologies Used:</h5>
+              <span>Tech Image Here</span>
+            </div>
+          </div>
+          <div class="projects__cards-card--main-image">
+            <img class="mockup" src="/images/martins-bbq.png" alt="" />
+          </div>
+        </div>
+
+        <div class="projects__cards-card">
+          <div class="projects__cards-card-text">
+            <div class="projects__cards-card-text--ctas">
+              <a href="#">Live Project</a>
+              <a href="#">Github</a>
+            </div>
+            <div class="projects__cards-card-text--content">
+              <h4>Project 1</h4>
+              <p>
+                It Is A Long Established Fact That A Reader Will Be Distracted
+                By The Readable Content Of A Page When Looking At Its Layout.
+                The Point Of Using Lorem Ipsum
+              </p>
+            </div>
+            <div class="projects__cards-card-text--images">
+              <h5>Technologies Used:</h5>
+              <span>Tech Image Here</span>
+            </div>
+          </div>
+          <div class="projects__cards-card--main-image">
+            <img class="mockup" src="/images/martins-bbq.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="work__title">
+        <h2>Past Work</h2>
+        <p>
+          It Is A Long Established Fact That A Reader Will Be Distracted By The
+          Readable Content Of A Page When Looking At Its Layout. The Point Of
+          Using.
+        </p>
+      </div>
+
+      <!-- MOBILE ONLY -->
+      <div class="work__carousel">
+        <div class="work__carousel-container">
+          <div class="track">
+            <div class="card">
+              <div class="card-image">
+                <img src="/images/martins-bbq.png" alt="" />
+              </div>
+              <div class="card-text">
+                <h4>Work</h4>
+                <p>
+                  It Is A Long Established Fact That A Reader Will Be Distracted
+                  By The Readable Content Of A Page When Looking At Its Layout.
+                  The Point Of Using.
+                </p>
+                <a href="#">Live Site</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="/images/martins-bbq.png" alt="" />
+              </div>
+              <div class="card-text">
+                <h4>Work</h4>
+                <p>
+                  It Is A Long Established Fact That A Reader Will Be Distracted
+                  By The Readable Content Of A Page When Looking At Its Layout.
+                  The Point Of Using.
+                </p>
+                <a href="#">Live Site</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="/images/martins-bbq.png" alt="" />
+              </div>
+              <div class="card-text">
+                <h4>Work</h4>
+                <p>
+                  It Is A Long Established Fact That A Reader Will Be Distracted
+                  By The Readable Content Of A Page When Looking At Its Layout.
+                  The Point Of Using.
+                </p>
+                <a href="#">Live Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work__container">
+        <div class="work__container-card">
+          <div class="work__container-card--image">
+            <img src="/images/martins-bbq.png" alt="" />
+          </div>
+          <div class="work__container-card--text">
+            <h4>Work</h4>
+            <p>
+              It Is A Long Established Fact That A Reader Will Be Distracted By
+              The Readable Content Of A Page When Looking At Its Layout. The
+              Point Of Using.
+            </p>
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+
+        <div class="work__container-card">
+          <div class="work__container-card--image">
+            <img src="/images/martins-bbq.png" alt="" />
+          </div>
+          <div class="work__container-card--text">
+            <h4>Work</h4>
+            <p>
+              It Is A Long Established Fact That A Reader Will Be Distracted By
+              The Readable Content Of A Page When Looking At Its Layout. The
+              Point Of Using.
+            </p>
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+
+        <div class="work__container-card">
+          <div class="work__container-card--image">
+            <img src="/images/martins-bbq.png" alt="" />
+          </div>
+          <div class="work__container-card--text">
+            <h4>Work</h4>
+            <p>
+              It Is A Long Established Fact That A Reader Will Be Distracted By
+              The Readable Content Of A Page When Looking At Its Layout. The
+              Point Of Using.
+            </p>
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content-main">
+          <div class="footer__content-main--text">
+            <h2>Get In Touch</h2>
+            <p>
+              It Is A Long Established Fact That A Reader Will Be Distracted By
+              The Readable Content Of A Page When Looking At Its Layout. The
+              Point Of Using.
+            </p>
+          </div>
+          <div class="footer__content-main--ctas">
+            <button class="primary-btn">Contact</button>
+            <button class="secondary-btn">Contact</button>
+          </div>
+        </div>
+        <div class="footer__content-secondary">
+          <div class="footer__secondary-social-links">
+            <p>hello</p>
+          </div>
+          <a href="#">Email Here</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/app//js/main.js" defer></script>
+</html>

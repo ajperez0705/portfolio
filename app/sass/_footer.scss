@@ -1,0 +1,56 @@
+.footer {
+  background-color: $lightBlack;
+  padding: 80px 24px;
+  height: 600px;
+  position: relative;
+
+  @include breakpoint-up(medium) {
+    padding: 120px 60px;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 130px 120px;
+  }
+
+  &__content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 40px 16px;
+
+    &-main--text {
+      margin-bottom: 40px;
+      padding: 0 24px;
+
+      & h2 {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-main--ctas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+
+      & button:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    &-secondary {
+      position: absolute;
+      bottom: 32px;
+
+      @include breakpoint-up(medium) {
+        display: none;
+      }
+    }
+  }
+}

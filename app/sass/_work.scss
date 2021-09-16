@@ -1,0 +1,126 @@
+.work {
+  background-color: $darkBlack;
+  padding: 80px 24px;
+
+  @include breakpoint-up(medium) {
+    padding: 120px 60px;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 130px 120px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+
+    // @include breakpoint-up(medium) {
+    //   margin-bottom: 60px;
+    // }
+
+    & h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint-up(medium) {
+      & p {
+        width: 50%;
+      }
+    }
+  }
+
+  &__carousel {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint-up(medium) {
+      display: none;
+    }
+
+    &-container {
+      & .track {
+        position: absolute;
+
+        // top: 100px;
+        left: 20px;
+        display: inline-flex;
+        touch-action: none;
+        & .card {
+          min-width: 300px;
+          //   max-width: 300px;
+          min-height: 440px;
+          //   max-height: 440px;
+          border-radius: 3px;
+          margin-right: 20px;
+
+          &-image img {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+          &-text {
+            margin: 24px 0;
+            background-color: $lightBlack;
+            padding: 24px;
+            border-radius: 0 0 8px 8px;
+
+            & h4 {
+              font-size: 32px;
+            }
+
+            & p {
+              padding: 16px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: none;
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &-card {
+        margin: 0 16px;
+        &--image img {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        &--text {
+          text-align: left;
+          background-color: $lightBlack;
+          padding: 24px;
+          border-radius: 0 0 8px 8px;
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+
+          & h4 {
+            font-size: 32px;
+          }
+
+          & p {
+            padding: 16px 0;
+          }
+        }
+      }
+    }
+  }
+}

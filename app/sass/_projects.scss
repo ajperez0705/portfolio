@@ -1,0 +1,100 @@
+.projects {
+  background-color: $lightBlack;
+  padding: 80px 24px;
+
+  @include breakpoint-up(medium) {
+    padding: 120px 60px;
+  }
+
+  @include breakpoint-up(large) {
+    padding: 130px 120px;
+  }
+
+  & h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    &-card {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+
+      @include breakpoint-up(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &--main-image {
+        flex: 1.25;
+        & img {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+          max-height: 100%;
+
+          @include breakpoint-up(medium) {
+            &:nth-child(2) {
+              order: 1;
+            }
+          }
+        }
+      }
+
+      &-text {
+        // padding: ;
+        margin: 24px 0;
+        flex: 0.75;
+
+        @include breakpoint-up(medium) {
+          margin: 24px;
+          &:nth-child(2) {
+            order: 2;
+          }
+        }
+
+        &--ctas {
+          & a {
+            color: $lightPurple;
+            font-size: 14px;
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+            transition: text-decoration 0.3s ease-out;
+
+            &:not(:last-child) {
+              margin-right: 16px;
+            }
+
+            &:hover {
+              text-decoration: underline;
+              color: $darkPurple;
+            }
+          }
+        }
+
+        &--content {
+          margin: 16px 0;
+          & h4 {
+            font-size: 24px;
+            opacity: 0.6;
+          }
+        }
+
+        & h5 {
+          font-size: 18px;
+          font-weight: 500;
+          opacity: 0.6;
+          //   font-family: Lucida;
+        }
+      }
+    }
+  }
+}
