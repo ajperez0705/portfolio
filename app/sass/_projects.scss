@@ -1,6 +1,6 @@
 .projects {
   background-color: $lightBlack;
-  padding: 80px 24px;
+  padding: 120px 24px;
 
   @include breakpoint-up(medium) {
     padding: 120px 60px;
@@ -24,13 +24,16 @@
       justify-content: center;
 
       &:not(:last-child) {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
       }
 
       @include breakpoint-up(medium) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
       }
 
       &--main-image {
@@ -92,9 +95,42 @@
           font-size: 18px;
           font-weight: 500;
           opacity: 0.6;
+          margin-bottom: 8px;
           //   font-family: Lucida;
         }
       }
     }
+  }
+}
+
+.tech-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 16px 0;
+
+  & img {
+    // width: auto;
+    height: 45px;
+  }
+
+  & img:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.adobe-logo {
+  width: 20%;
+  height: 13%;
+
+  @include breakpoint-up(medium) {
+    width: 20%;
+    height: 13%;
+  }
+
+  @include breakpoint-up(large) {
+    width: 13%;
+    height: 13%;
   }
 }

@@ -83,12 +83,16 @@
     color: white;
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 
     &.active {
       left: 0%;
+      position: fixed;
+      overflow: hidden;
     }
 
     .header__mobile-menu--content {
+      overflow: hidden;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -113,18 +117,9 @@
         text-decoration: none;
         color: white;
         font-size: 24px;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        // font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        // "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
-    }
-
-    .header__mobile-menu--logout {
-      position: absolute;
-      bottom: 5%;
-
-      text-decoration: none;
-      color: white;
-      opacity: 0.6;
     }
   }
 
@@ -175,24 +170,29 @@
       color: white;
       position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        bottom: -20px;
-        left: 0;
-        right: 0px;
-        height: 5px;
-        /* width: 90%; */
-        // background: $primary Gradient;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-      }
       &:hover {
-        &::after {
-          opacity: 1;
-        }
+        text-decoration: underline;
+        color: $darkPurple;
       }
+
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   bottom: -20px;
+      //   left: 0;
+      //   right: 0px;
+      //   height: 5px;
+      //   width: 90%;
+      //   background: $darkPurple;
+      //   opacity: 0;
+      //   transition: opacity 0.3s ease-in-out;
+      // }
+      // &:hover {
+      //   &::after {
+      //     opacity: 1;
+      //   }
+      // }
 
       &:not(:last-child) {
         margin-right: 10px;

@@ -3,6 +3,10 @@
   padding: 80px 24px;
   height: 600px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
   @include breakpoint-up(medium) {
     padding: 120px 60px;
@@ -23,11 +27,24 @@
     padding: 40px 16px;
 
     &-main--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
       margin-bottom: 40px;
       padding: 0 24px;
 
       & h2 {
         margin-bottom: 16px;
+      }
+
+      & p {
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+          width: 60%;
+        }
       }
     }
 
@@ -47,6 +64,26 @@
     &-secondary {
       position: absolute;
       bottom: 32px;
+
+      &--social-links {
+        margin-bottom: 10px;
+      }
+
+      & a:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      & path {
+        fill: $lightPurple;
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
 
       @include breakpoint-up(medium) {
         display: none;
