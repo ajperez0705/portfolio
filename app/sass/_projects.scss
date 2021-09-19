@@ -22,9 +22,14 @@
       flex-direction: column;
       align-content: center;
       justify-content: center;
-
       &:not(:last-child) {
-        margin-bottom: 200px;
+        margin-bottom: 60px;
+      }
+
+      @include breakpoint-up(medium) {
+        &:not(:last-child) {
+          margin-bottom: 200px;
+        }
       }
 
       @include breakpoint-up(medium) {

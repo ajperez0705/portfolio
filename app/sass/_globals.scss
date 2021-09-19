@@ -89,13 +89,17 @@ a {
 .primary-btn {
   padding: 20px 28px;
   border-radius: 2px;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
   border: none;
-  color: white;
   background-color: $darkPurple;
   // margin: 16px;
+
+  & a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
 
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -107,15 +111,21 @@ a {
 .secondary-btn {
   padding: 20px 28px;
   border-radius: 2px;
-  font-size: 20px;
-  font-weight: 500;
   border: none;
-  color: white;
+
   background-color: $lightPurple;
   // margin: 16px;
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+
+  & a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
 
   &:hover {
     opacity: 0.7;
@@ -124,6 +134,10 @@ a {
   & a {
     font-family: "Montserrat", sans-serif;
   }
+}
+
+.body-span {
+  color: $darkPurple;
 }
 
 .fixed-social-links {

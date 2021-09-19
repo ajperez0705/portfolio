@@ -92,15 +92,19 @@ a:hover {
 .primary-btn {
   padding: 20px 28px;
   border-radius: 2px;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
   border: none;
-  color: white;
   background-color: #8248e9;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+.primary-btn a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -110,15 +114,20 @@ a:hover {
 .secondary-btn {
   padding: 20px 28px;
   border-radius: 2px;
-  font-size: 20px;
-  font-weight: 500;
   border: none;
-  color: white;
   background-color: #a57af0;
   cursor: pointer;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+
+.secondary-btn a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .secondary-btn:hover {
@@ -127,6 +136,10 @@ a:hover {
 
 .secondary-btn a {
   font-family: "Montserrat", sans-serif;
+}
+
+.body-span {
+  color: #8248e9;
 }
 
 .fixed-social-links {
@@ -688,8 +701,14 @@ a:hover {
   }
 }
 
+.about__content-image {
+  width: 100%;
+}
+
 @media (min-width: 650px) {
-  .about__content svg {
+  .about__content-image {
+    width: 50%;
+    height: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -861,7 +880,13 @@ a:hover {
 }
 
 .projects__cards-card:not(:last-child) {
-  margin-bottom: 200px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 650px) {
+  .projects__cards-card:not(:last-child) {
+    margin-bottom: 200px;
+  }
 }
 
 @media (min-width: 650px) {
@@ -1121,9 +1146,9 @@ a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .work__container-card {
     margin: 0 16px;
@@ -1141,6 +1166,7 @@ a:hover {
     border-radius: 0 0 8px 8px;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    max-width: 470px;
   }
   .work__container-card--text h4 {
     font-size: 32px;

@@ -21,8 +21,12 @@
       justify-content: space-between;
     }
 
-    & svg {
+    &-image {
+      width: 100%;
+
       @include breakpoint-up(medium) {
+        width: 50%;
+        height: 100%;
         order: 2;
       }
     }

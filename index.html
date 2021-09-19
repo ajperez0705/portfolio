@@ -20,6 +20,7 @@
     />
 
     <title>Andrew Perez - Portfolio</title>
+    <link rel="icon" type="image/png" href="/images/portfolio-favicon.png" />
   </head>
   <body>
     <header class="wrapper header">
@@ -56,13 +57,19 @@
     <div class="fixed-social-links">
       <ul>
         <li>
-          <a href="#"><img src="images/svgs/github-logo.svg" alt="" /></a>
+          <a href="#"><img src="images/logo-svgs/github-logo.svg" alt="" /></a>
         </li>
         <li>
-          <a href="#"><img src="images/svgs/twitter-logo.svg" alt="" /></a>
+          <a href="https://twitter.com/blockchain_drew" target="_blank"
+            ><img src="images/logo-svgs/twitter-logo.svg" alt=""
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="images/svgs/linkedin-logo.svg" alt="" /></a>
+          <a
+            href="https://www.linkedin.com/in/andrew-perez-738a3a1aa/"
+            target="_blank"
+            ><img src="images/logo-svgs/linkedin-logo.svg" alt=""
+          /></a>
         </li>
       </ul>
     </div>
@@ -76,14 +83,18 @@
           <h6>Hi, my name is</h6>
           <h1>Andrew Perez<span class="title-span">.</span></h1>
           <h6>
-            It Is A Long Established Fact That A Reader Will Be Distracted By
-            The Readable Content Of A Page When Looking At Its Layout. The Point
-            Of Using Lorem Ipsum
+            I am an aspiring Front-End Developer who wants to be involved with
+            technology that leaves a positive impact on the world, and improves
+            people's daily lives.
           </h6>
         </div>
         <div class="hero__content-cta">
-          <button class="primary-btn">View Projects</button>
-          <button class="secondary-btn">View Projects</button>
+          <button class="primary-btn">
+            <a href="#projects">View Projects</a>
+          </button>
+          <button class="secondary-btn">
+            <a href="#work">Client Work</a>
+          </button>
         </div>
       </div>
     </section>
@@ -91,26 +102,11 @@
     <section id="about" class="about">
       <div class="about__content">
         <!-- Placeholder -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="300"
-          height="150"
-          viewBox="0 0 300 150"
-        >
-          <rect fill="#ddd" width="300" height="150" />
-          <text
-            fill="rgba(0,0,0,0.5)"
-            font-family="sans-serif"
-            font-size="30"
-            dy="10.5"
-            font-weight="bold"
-            x="50%"
-            y="50%"
-            text-anchor="middle"
-          >
-            300×150
-          </text>
-        </svg>
+        <img
+          class="about__content-image"
+          src="/images/my-headshot.png"
+          alt=""
+        />
 
         <!-- Mobile Accordion -->
         <div class="accordion">
@@ -118,9 +114,11 @@
             <div class="accordion__item-header">My Story</div>
             <div class="accordion__item-body">
               <p class="accordion__item-body--content">
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                Originally a middle school history teacher, my
+                <span class="body-span">dream and passion</span> has always been
+                to make a positive impact on people's lives. That dream lives
+                on, but the
+                <span class="body-span">tech field is my new medium</span>.
               </p>
             </div>
           </div>
@@ -129,17 +127,18 @@
             <div class="accordion__item-header">Projects & Technologies</div>
             <div class="accordion__item-body">
               <p class="accordion__item-body--content">
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                Maybe you recognize some of the logos below? My favorite
+                technology so far would have to be
+                <span class="body-span">React</span>. This is the one that made
+                modern development really click for me.
               </p>
               <div class="tech-logos">
-                <img src="/images/svgs/html-logo.svg" alt="" />
-                <img src="/images/svgs/css-logo.svg" alt="" />
-                <img src="/images/svgs/js-logo.svg" alt="" />
-                <img src="/images/svgs/react-logo.svg" alt="" />
-                <img src="/images/svgs/redux-logo.svg" alt="" />
-                <img src="/images/svgs/firebase-logo.svg" alt="" />
+                <img src="/images/logo-svgs/html-logo.svg" alt="" />
+                <img src="/images/logo-svgs/css-logo.svg" alt="" />
+                <img src="/images/logo-svgs/js-logo.svg" alt="" />
+                <img src="/images/logo-svgs/react-logo.svg" alt="" />
+                <img src="/images/logo-svgs/redux-logo.svg" alt="" />
+                <img src="/images/logo-svgs/firebase-logo.svg" alt="" />
               </div>
             </div>
           </div>
@@ -148,15 +147,19 @@
             <div class="accordion__item-header">Design Skills</div>
             <div class="accordion__item-body">
               <p class="accordion__item-body--content">
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                When deciding to make my transition, I was aiming for UX/UI
+                design, and so I became very comfortable with
+                <span class="body-span">designing solutions</span>
+                using programs like Adobe XD and Figma. You can see websites
+                I've built for
+                <span class="body-span"><a href="#work">clients</a></span
+                >.
               </p>
               <div class="tech-logos">
-                <img src="/images/svgs/figma-logo.svg" alt="" />
+                <img src="/images/logo-svgs/figma-logo.svg" alt="" />
                 <img
                   class="adobe-logo"
-                  src="/images/adobe-xd-logo-png-transparent.png"
+                  src="images/adobe-xd-logo-png-transparent.png"
                   alt=""
                 />
               </div>
@@ -167,11 +170,13 @@
         <div class="about__content-cards">
           <div class="about-card">
             <div class="about-card-content">
-              <h3>My Story</h3>
+              <h3>My Story (The Short Version)</h3>
               <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                Originally a middle school history teacher, my
+                <span class="body-span">dream and passion</span> has always been
+                to make a positive impact on people's lives. That dream lives
+                on, but the
+                <span class="body-span">tech field is my new medium</span>.
               </p>
             </div>
           </div>
@@ -180,17 +185,18 @@
             <div class="about-card-content">
               <h3>Projects & Technologies</h3>
               <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                Maybe you recognize some of the logos below? My favorite
+                technology so far would have to be
+                <span class="body-span">React</span>. This is the one that made
+                modern development really click for me.
               </p>
               <div class="tech-logos">
-                <img src="/images/svgs/html-logo.svg" alt="" />
-                <img src="/images/svgs/css-logo.svg" alt="" />
-                <img src="/images/svgs/js-logo.svg" alt="" />
-                <img src="/images/svgs/react-logo.svg" alt="" />
-                <img src="/images/svgs/redux-logo.svg" alt="" />
-                <img src="/images/svgs/firebase-logo.svg" alt="" />
+                <img src="/images/logo-svgs/html-logo.svg" alt="" />
+                <img src="/images/logo-svgs/css-logo.svg" alt="" />
+                <img src="/images/logo-svgs/js-logo.svg" alt="" />
+                <img src="/images/logo-svgs/react-logo.svg" alt="" />
+                <img src="/images/logo-svgs/redux-logo.svg" alt="" />
+                <img src="/images/logo-svgs/firebase-logo.svg" alt="" />
               </div>
             </div>
           </div>
@@ -199,12 +205,16 @@
             <div class="about-card-content">
               <h3>Design Skills</h3>
               <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                When deciding to make my transition, I was aiming for UX/UI
+                design, and so I became very comfortable with
+                <span class="body-span">designing solutions</span>
+                using programs like Adobe XD and Figma. You can see websites
+                I've built for
+                <span class="body-span"><a href="#work">clients</a></span
+                >.
               </p>
               <div class="tech-logos">
-                <img src="/images/svgs/figma-logo.svg" alt="" />
+                <img src="/images/logo-svgs/figma-logo.svg" alt="" />
                 <img
                   class="adobe-logo"
                   src="/images/adobe-xd-logo-png-transparent.png"
@@ -224,28 +234,77 @@
           <div class="projects__cards-card-text">
             <div class="projects__cards-card-text--ctas">
               <a href="#">Live Project</a>
-              <a href="#">Github</a>
+              <a
+                href="https://github.com/ajperez0705/react-game-store"
+                target="_blank"
+                >Github</a
+              >
             </div>
             <div class="projects__cards-card-text--content">
-              <h4>Project 1</h4>
+              <h4>GameHub</h4>
               <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                GameHub is an e-commerce application that lets users create an
+                account, view details about games, purchase games, and more. My
+                favorite and biggest project so far, and the first time I
+                dabbled in the backend; see more details about the project
+                within the readme in the Github link.
               </p>
             </div>
             <div class="projects__cards-card-text--images">
               <h5>Technologies Used:</h5>
               <div class="tech-logos">
-                <img src="/images/svgs/react-logo.svg" alt="" />
-                <img src="/images/svgs/redux-logo.svg" alt="" />
-                <img src="/images/svgs/firebase-logo.svg" alt="" />
-                <img src="/images/svgs/css-logo.svg" alt="" />
+                <img src="/images/logo-svgs/react-logo.svg" alt="react" />
+                <img src="/images/logo-svgs/redux-logo.svg" alt="" />
+                <img src="/images/logo-svgs/nodeJS-logo.svg" alt="" />
+                <img src="/images/logo-svgs/firebase-logo.svg" alt="" />
+                <img src="/images/logo-svgs/css-logo.svg" alt="" />
               </div>
             </div>
           </div>
           <div class="projects__cards-card--main-image">
-            <img class="mockup" src="/images/martins-bbq.png" alt="" />
+            <img
+              class="mockup"
+              src="/images/project-screenshots/gamehub-mockup.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="projects__cards-card">
+          <div class="projects__cards-card-text">
+            <div class="projects__cards-card-text--ctas">
+              <a href="#">Live Project</a>
+              <a
+                href="https://github.com/ajperez0705/nft-landing-page"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+            <div class="projects__cards-card-text--content">
+              <h4>NFTify</h4>
+              <p>
+                NFTify is a concept site born during the NFT craze of August
+                2021, when the popular marketplace: Opensea, hit $1 Billion in
+                Trading Volume! This project showcases my responsive design
+                skills and HTML, CSS, and SASS design fundamentals.
+              </p>
+            </div>
+            <div class="projects__cards-card-text--images">
+              <h5>Technologies Used:</h5>
+              <div class="tech-logos">
+                <img src="/images/logo-svgs/html-logo.svg" alt="" />
+                <img src="/images/logo-svgs/css-logo.svg" alt="" />
+                <img src="/images/logo-svgs/sass-logo.svg" alt="" />
+                <img src="/images/logo-svgs/js-logo.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="projects__cards-card--main-image">
+            <img
+              class="mockup"
+              src="/images/project-screenshots/nftify-mockup.png"
+              alt=""
+            />
           </div>
         </div>
 
@@ -256,56 +315,29 @@
               <a href="#">Github</a>
             </div>
             <div class="projects__cards-card-text--content">
-              <h4>Project 1</h4>
+              <h4>React Weather App</h4>
               <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
+                This project really solidified my React fundamentals. Although a
+                very common and small application, I tried to add some flair by
+                using an API that accesses the users current location, as well
+                as a background that changes depending on current temperature,
+                and the ability to save locations for later viewing.
               </p>
             </div>
             <div class="projects__cards-card-text--images">
               <h5>Technologies Used:</h5>
               <div class="tech-logos">
-                <a href="#"><img src="/images/svgs/react-logo.svg" alt="" /></a>
-                <img src="/images/svgs/redux-logo.svg" alt="" />
-                <img src="/images/svgs/firebase-logo.svg" alt="" />
-                <img src="/images/svgs/html-logo.svg" alt="" />
-                <img src="/images/svgs/css-logo.svg" alt="" />
+                <img src="/images/logo-svgs/react-logo.svg" alt="" />
+                <img src="/images/logo-svgs/css-logo.svg" alt="" />
               </div>
             </div>
           </div>
           <div class="projects__cards-card--main-image">
-            <img class="mockup" src="/images/martins-bbq.png" alt="" />
-          </div>
-        </div>
-
-        <div class="projects__cards-card">
-          <div class="projects__cards-card-text">
-            <div class="projects__cards-card-text--ctas">
-              <a href="#">Live Project</a>
-              <a href="#">Github</a>
-            </div>
-            <div class="projects__cards-card-text--content">
-              <h4>Project 1</h4>
-              <p>
-                It Is A Long Established Fact That A Reader Will Be Distracted
-                By The Readable Content Of A Page When Looking At Its Layout.
-                The Point Of Using Lorem Ipsum
-              </p>
-            </div>
-            <div class="projects__cards-card-text--images">
-              <h5>Technologies Used:</h5>
-              <div class="tech-logos">
-                <img src="/images/svgs/react-logo.svg" alt="" />
-                <img src="/images/svgs/redux-logo.svg" alt="" />
-                <img src="/images/svgs/firebase-logo.svg" alt="" />
-                <img src="/images/svgs/html-logo.svg" alt="" />
-                <img src="/images/svgs/css-logo.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="projects__cards-card--main-image">
-            <img class="mockup" src="/images/martins-bbq.png" alt="" />
+            <img
+              class="mockup"
+              src="/images/project-screenshots/weather-app-mockup.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -313,11 +345,13 @@
 
     <section id="work" class="work">
       <div class="work__title">
-        <h2>Past Work</h2>
+        <h2>Client Work</h2>
         <p>
-          It Is A Long Established Fact That A Reader Will Be Distracted By The
-          Readable Content Of A Page When Looking At Its Layout. The Point Of
-          Using.
+          The following projects were websites made for local businsses using
+          Adobe XD, Wordpress and the Elementor plugin. During this time, I did
+          not touch a single line of code (aside from custom CSS at times). The
+          intention here is to show that I have designed and delivered actual
+          products to actual people with actual deadlines.
         </p>
       </div>
 
@@ -327,46 +361,59 @@
           <div class="track">
             <div class="card">
               <div class="card-image">
-                <img src="/images/martins-bbq.png" alt="" />
+                <img src="/images/client-mockups/martins-bbq.png" alt="" />
               </div>
               <div class="card-text">
-                <h4>Work</h4>
+                <h4>Martin's BBQ</h4>
                 <p>
-                  It Is A Long Established Fact That A Reader Will Be Distracted
-                  By The Readable Content Of A Page When Looking At Its Layout.
-                  The Point Of Using.
+                  Martin's BBQ was a local Latin American restaurant who needed
+                  a brand new website for their new opening. The goal was to
+                  provide newcomers with information about the cuisine, as well
+                  as their menu. Customers can also order from GrubHub.
                 </p>
-                <a href="#">Live Site</a>
+                <a href="https://fl.martinsbbqpr.net/" target="_blank"
+                  >Live Site</a
+                >
               </div>
             </div>
 
             <div class="card">
               <div class="card-image">
-                <img src="/images/martins-bbq.png" alt="" />
+                <img src="/images/client-mockups/hsa.png" alt="" />
               </div>
               <div class="card-text">
-                <h4>Work</h4>
+                <h4>Felipe Callado Photography</h4>
                 <p>
-                  It Is A Long Established Fact That A Reader Will Be Distracted
-                  By The Readable Content Of A Page When Looking At Its Layout.
-                  The Point Of Using.
+                  Felipe Callado was a photographer who would regularly use
+                  Facebook to book new clients. He grew to a point where a
+                  proper website that showcased his talents was needed. A very
+                  minimalistic design, something that is different than I was
+                  used to, but one that the client and I enjoyed in the end.
                 </p>
-                <a href="#">Live Site</a>
+                <a href="https://felipecallado.com/" target="_blank"
+                  >Live Site</a
+                >
               </div>
             </div>
 
             <div class="card">
               <div class="card-image">
-                <img src="/images/martins-bbq.png" alt="" />
+                <img src="/images/client-mockups/fc-photography.png" alt="" />
               </div>
               <div class="card-text">
-                <h4>Work</h4>
+                <h4>High Soccer Arena</h4>
                 <p>
-                  It Is A Long Established Fact That A Reader Will Be Distracted
-                  By The Readable Content Of A Page When Looking At Its Layout.
-                  The Point Of Using.
+                  High Soccer Arena is an indoor soccer facility. There were a
+                  number of goals for this site: provide tournament information
+                  for walk-in visitors, information and registration links for
+                  parents and their children, and the ability to reserve fields
+                  and birthday parties. Additionally, I was tasked with
+                  improving the brands SEO rankings through keyword research and
+                  site architecture.
                 </p>
-                <a href="#">Live Site</a>
+                <a href="https://highsoccerarena.com/" target="_blank"
+                  >Live Site</a
+                >
               </div>
             </div>
           </div>
@@ -376,46 +423,52 @@
       <div class="work__container">
         <div class="work__container-card">
           <div class="work__container-card--image">
-            <img src="/images/martins-bbq.png" alt="" />
+            <img src="/images/client-mockups/martins-bbq.png" alt="" />
           </div>
           <div class="work__container-card--text">
-            <h4>Work</h4>
+            <h4>Martin's BBQ</h4>
             <p>
-              It Is A Long Established Fact That A Reader Will Be Distracted By
-              The Readable Content Of A Page When Looking At Its Layout. The
-              Point Of Using.
+              Martin's BBQ was a local Latin American restaurant who needed a
+              brand new website for their new opening. The goal was to provide
+              newcomers with information about the cuisine, as well as their
+              menu. Customers can also order from GrubHub.
             </p>
-            <a href="#">Live Site</a>
+            <a href="https://fl.martinsbbqpr.net/" target="_blank">Live Site</a>
           </div>
         </div>
 
         <div class="work__container-card">
           <div class="work__container-card--image">
-            <img src="/images/martins-bbq.png" alt="" />
+            <img src="/images/client-mockups/fc-photography.png" alt="" />
           </div>
           <div class="work__container-card--text">
-            <h4>Work</h4>
+            <h4>Felipe Callado Photography</h4>
             <p>
-              It Is A Long Established Fact That A Reader Will Be Distracted By
-              The Readable Content Of A Page When Looking At Its Layout. The
-              Point Of Using.
+              Felipe Callado was a photographer who would regularly use Facebook
+              to book new clients. He grew to a point where a proper website
+              that showcased his talents was needed. A very minimalistic design,
+              something that is different than I was used to, but one that the
+              client and I enjoyed in the end.
             </p>
-            <a href="#">Live Site</a>
+            <a href="https://felipecallado.com/" target="_blank">Live Site</a>
           </div>
         </div>
 
         <div class="work__container-card">
           <div class="work__container-card--image">
-            <img src="/images/martins-bbq.png" alt="" />
+            <img src="/images/client-mockups/hsa.png" alt="" />
           </div>
           <div class="work__container-card--text">
-            <h4>Work</h4>
+            <h4>High Soccer Arena</h4>
             <p>
-              It Is A Long Established Fact That A Reader Will Be Distracted By
-              The Readable Content Of A Page When Looking At Its Layout. The
-              Point Of Using.
+              High Soccer Arena is an indoor soccer facility. There were a
+              number of goals for this site: provide tournament information for
+              walk-in visitors, information and registration links for parents
+              and their children, and the ability to reserve fields and birthday
+              parties. Additionally, I was tasked with improving the brands SEO
+              rankings through keyword research and site architecture.
             </p>
-            <a href="#">Live Site</a>
+            <a href="https://highsoccerarena.com/" target="_blank">Live Site</a>
           </div>
         </div>
       </div>
@@ -427,21 +480,28 @@
           <div class="footer__content-main--text">
             <h2>Get In Touch</h2>
             <p>
-              It Is A Long Established Fact That A Reader Will Be Distracted By
-              The Readable Content Of A Page When Looking At Its Layout. The
-              Point Of Using.
+              Feel free to contact me through one of my social channels, or by
+              email.
             </p>
           </div>
           <div class="footer__content-main--ctas">
-            <button class="primary-btn">Contact</button>
-            <button class="secondary-btn">Contact</button>
+            <button class="primary-btn"><a href="#">Email</a></button>
+            <button class="secondary-btn"><a href="#">Resume</a></button>
           </div>
         </div>
         <div class="footer__content-secondary">
           <div class="footer__content-secondary--social-links">
-            <a href="#"><img src="/images/svgs/github-logo.svg" alt="" /></a>
-            <a href="#"><img src="/images/svgs/twitter-logo.svg" alt="" /></a>
-            <a href="#"><img src="/images/svgs/linkedin-logo.svg" alt="" /></a>
+            <a href="#"
+              ><img src="/images/logo-svgs/github-logo.svg" alt=""
+            /></a>
+            <a href="https://twitter.com/blockchain_drew" target="_blank"
+              ><img src="/images/logo-svgs/twitter-logo.svg" alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/andrew-perez-738a3a1aa/"
+              target="_blank"
+              ><img src="/images/logo-svgs/linkedin-logo.svg" alt=""
+            /></a>
           </div>
           <a href="#">Email Here</a>
         </div>
