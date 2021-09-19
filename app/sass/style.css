@@ -306,7 +306,8 @@ a:hover {
 }
 
 .header__nav-bar .mobile-btn {
-  position: relative;
+  position: fixed;
+  right: 20px;
   display: block;
   width: 35px;
   height: 40px;
